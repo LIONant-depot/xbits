@@ -2,6 +2,9 @@
 #define XBITS_H
 #pragma once
 
+#include <cassert>
+#include <cstdint>
+
 namespace xbits
 {
     //-------------------------------------------------------------------------------------------------------
