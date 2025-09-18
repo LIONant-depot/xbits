@@ -23,8 +23,6 @@ None! Pure standard C++.
 
 ```cpp
 #include "xbits.h"
-#include <cassert>
-#include <cstdint>
 
 int main() {
     // Alignment
