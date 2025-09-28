@@ -125,7 +125,7 @@ namespace xbits
     // Return:
     //      A new pointer that's aligned, pointing to a higher or same address.
     //------------------------------------------------------------------------------
-    template    template< typename T > 
+    template< typename T > 
     T* Align( T* Address, const int AlignTo ) noexcept
     {
         return reinterpret_cast<T*>( Align( reinterpret_cast<const std::size_t>( Address ), AlignTo ) );
