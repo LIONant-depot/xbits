@@ -51,7 +51,7 @@ namespace xbits
     // Return:
     //      An alias to the matching signed or unsigned integer type.
     //-------------------------------------------------------------------------------------------------------
-    template< typename T >    template< typename T >
+    template< typename T >
     using to_int_t = byte_size_int_t<sizeof(T)>;
 
     //-------------------------------------------------------------------------------------------------------
@@ -150,7 +150,7 @@ namespace xbits
     T AlignLower( T Address, const int AlignTo ) noexcept
     {
         static_assert( std::is_integral<T>::value, "This function only works with integer values" );
-        using unsigned_t = to_uint_t<T>::type; 
+        using unsigned_t = to_uint_t<T>; 
         return static_cast<T>( unsigned_t( Address ) & (-AlignTo) );
     }
 
